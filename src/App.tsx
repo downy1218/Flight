@@ -1,23 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GlobalStyle from './Styles/Global';
+import MainPage from './Pages/MainPage';
+const queryClient = new QueryClient();
 
-const App: React.FC = () => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log('Effect 실행: count =', count);
-
-    // 클린업 함수 정의
-    return () => {
-      console.log('클린업 실행: count =', count);
-    };
-  }, [count]);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>증가</button>
-    </div>
-  );
-};
+function App():JSX.Element{
+  return(
+    <QueryClientProvider client={queryClient}>
+      <GlobalStyle/>
+      <MainPage/>
+    </QueryClientProvider>
+  )
+}
 
 export default App;

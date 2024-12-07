@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="541.98mm" height="541.98mm" version="1.1" viewBox="0 0 1920.4006 1920.4006" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(230.17 2564.5)">
+  <g transform="matrix(6.3991 0 0 6.3991 1822.9 -4655.4)">
+   <g transform="matrix(.96593 .25882 -.25882 .96593 138.78 111.61)" fill="none" stroke="#0c4b9c" stroke-width="1.0314">
+    <circle cx="-204.5" cy="432.86" r="149.5" opacity=".551"/>
+    <ellipse cx="-204.4" cy="531.37" rx="107.81" ry="31.5" opacity=".551"/>
+    <ellipse cx="-204.5" cy="336.87" rx="109.5" ry="32" opacity=".551"/>
+    <ellipse cx="-204.5" cy="401.87" rx="145.03" ry="42.498" opacity=".551"/>
+    <ellipse cx="-204.5" cy="466.87" rx="144.86" ry="42.446" opacity=".551"/>
+    <ellipse cx="-204.5" cy="499.37" rx="131.42" ry="38.476" opacity=".551"/>
+    <ellipse cx="-204.5" cy="369.37" rx="133.19" ry="38.999" opacity=".551"/>
+    <ellipse cx="-204.5" cy="434.37" rx="148.57" ry="43.543" opacity=".551"/>
+    <ellipse cx="-204.5" cy="432.86" rx="99.5" ry="149.5" opacity=".551"/>
+    <ellipse cx="-204.5" cy="432.86" rx="34.5" ry="149.5" opacity=".551"/>
+   </g>
+  </g>
+ </g>
+</svg>
