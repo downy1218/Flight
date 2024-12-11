@@ -22,6 +22,10 @@ export const EarthContainer = styled.div`
         width:100%;
         height:100%;
         object-fit:contain;
+        user-select: none;
+        user-drag: none;
+        position:relative;
+        z-index:10;
     }
 `
 
@@ -39,23 +43,45 @@ export const Title = styled.div`
     gap:20px;
     align-items:center;
     margin-top:94px;
-    margin-left:38px; 
+    margin-left:38px;
+    user-select: none;
     img{
         width:40px;
         height:40px;
     }
     h1{
         font-size:50px;
-        font-family:'AbrliFatface',serif;
+        font-family:'PTSerif-Italic';
+        letter-spacing: 3px;
         
     }
     h2{
         font-size:34px;
         margin-top:150px;
-        font-family:'AbrliFatface';
+        font-family:'PTSerif-BoldItalic';
+        letter-spacing: 1.3px;
     }
     p{
         font-size:25px;
-        font-family:'AbrliFatface';
+        font-family:'PTSerif-Regular';
+        letter-spacing: 1.3px;
     }
+`
+
+export const RedSpot = styled.div`
+    color:red;
+    position:absolute;
+    z-index:20;
+    p{
+        font-size:90px;
+        position:relative;
+        z-index:20;
+        padding-top:0;
+    }
+
+`
+export const Spread = styled.div`
+    position:absolute;
+    z-index:21;
+    margin-top:55px;
 `

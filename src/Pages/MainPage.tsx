@@ -1,4 +1,5 @@
 import * as M from '../Styles/MainStyle';
+import '../Styles/MainCss.css';
 
 function MainPage(): JSX.Element {
     const imgUrl = process.env.PUBLIC_URL;
@@ -19,6 +20,10 @@ function MainPage(): JSX.Element {
 
                 <M.EarthContainer>
                     <img src={imgUrl + '/Image/earth.svg'}></img>
+                    <M.RedSpot><p>.</p></M.RedSpot>
+                    <M.Spread className='core'></M.Spread>
+                    <M.Spread className='middle'></M.Spread>
+                    <M.Spread className='outside'></M.Spread>
                 </M.EarthContainer>
 
             </M.Container>
