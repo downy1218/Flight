@@ -85,3 +85,39 @@ export const Spread = styled.div`
     z-index:21;
     margin-top:55px;
 `
+export const Input = styled.div`
+    margin-bottom:50px;
+    position:absolute;
+    z-index:500;
+    left:1100px;
+    top:50px;
+    bottom:500px;
+
+`
+
+export const InputWrapper = styled.div`
+    display:flex;
+    gap:5px;
+    button{
+        width:50px;
+        height:50px;
+        background-color:rgba(18, 32, 44, 1);
+        border:none;
+        border-radius:8px;
+        color:white;
+        cursor:pointer;
+    }
+    justify-content:end;
+    margin-right:20px;
+    
+
+`
+    export const SearchBar = styled.input`
+    width:270px;
+    height:50px;
+    padding-left:10px;
+    background-color:rgba(18, 32, 44, 1);
+    border:none;
+    border-radius:10px;
+    color:white;
+`

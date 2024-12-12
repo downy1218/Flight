@@ -1,8 +1,15 @@
 import * as M from '../Styles/MainStyle';
 import '../Styles/MainCss.css';
-
+import SearchInput from '../Components/SearchInput';
+import { useNavigate } from 'react-router-dom';
 function MainPage(): JSX.Element {
     const imgUrl = process.env.PUBLIC_URL;
+    const navigate = useNavigate();
+
+    const handleGotoDetail = ()=>{
+        console.log('클릭됨')
+        navigate('/detail')
+    };
     return (
         <M.MainBody>
             <M.Container>
@@ -25,6 +32,10 @@ function MainPage(): JSX.Element {
                     <M.Spread className='middle'></M.Spread>
                     <M.Spread className='outside'></M.Spread>
                 </M.EarthContainer>
+
+                <M.Input className='input'>
+                    <SearchInput placeholder = '항공편을 입력하세요..' onClick = {()=>handleGotoDetail()}/>
+                </M.Input>
 
             </M.Container>
         </M.MainBody>
